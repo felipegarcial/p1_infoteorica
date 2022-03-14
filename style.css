@@ -1,0 +1,120 @@
+body {
+	background-color: white;
+	color: #9c27b0;
+	width: 100%;
+	height: 100vh;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.wrapper-section {
+	margin-top: 50px;
+	width: 50%;
+	height: auto;
+	border-radius: 8px;
+	padding: 30px 20px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+	background-color: rgb(255, 193, 7);
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+	border: 2px solid rgb(255, 193, 7);
+}
+
+/* label color */
+.input-field label {
+	color: #9c27b0;
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+	color: #9c27b0;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #9c27b0;
+}
+textarea.materialize-textarea {
+	color: rgba(100, 100, 100, 0.9);
+}
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid rgb(255, 193, 7);
+	box-shadow: 0 1px 0 0 rgb(255, 193, 7);
+}
+
+#id-wrapper-text-area-status {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#id-wrapper-text-area-status :nth-child(1) {
+	flex: 4;
+	width: 95%;
+}
+
+#id-wrapper-text-area-status :nth-child(2) {
+	flex: 1;
+}
+
+#wrapper-data {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#wrapper-data > div {
+	width: 200px;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#wrapper-btns {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+#wrapper-btns button {
+	margin-left: 50px;
+}
+
+.dataIO {
+	color: rgba(100, 100, 100, 0.9);
+	font-size: 15px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1 - Informática Teórica</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <main>
+        <section class="wrapper-section z-depth-2">
+            <div>
+                <div class="wrapper-title-input ">
+                    <h3 class="title">Selecciona el tipo de automata</h2>
+                </div> 
+                <div class="wrapper-input">
+                        <p>
+                          <label>
+                            <input name="typeMachine" class="with-gap" type="radio" value="0" checked />
+                            <span>Mealy</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="typeMachine" class="with-gap" type="radio"  value="1"/>
+                            <span>Moore</span>
+                          </label>
+                        </p>
+                </div>
+            </div>
+            <div>
+                <div class="wrapper-title-input ">
+                    <h3 class="title">Inserta los estados con sus salidas</h2>
+                </div> 
+                <div id="id-wrapper-text-area-status" class="wrapper-input">
+                    <div class="input-field">
+                        <textarea id="id-text-area" class="materialize-textarea"></textarea>
+                        <label for="id-text-area">Insertar los estados separados por , ejemplo: A,B,0,C,0</label>
+                    </div>
+                    <div class="">
+                      <button id="id-add-line" class="btn waves-effect waves-light purple" type="button">Agregar linea</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wrapper-data">
+              <div  class="dataIO">
+                <h4>Entrada</h4>
+
+                <div id="wrapper-data-input">
+
+                </div>
+              </div>
+
+              <div class="dataIO">
+                <h4>Salida</h4>
+                <div id="wrapper-data-output">
+
+                </div>
+              </div>
+             
+            </div>
+
+            <div id="wrapper-btns">
+                <button id="id-start-machine" class="btn waves-effect waves-light purple" type="button">Empezar maquina</button>
+                <button id="id-create-other-machine" class="btn waves-effect waves-light purple" type="button">Reiniciar maquina</button>
+            </div>
+        </section>
+    </main>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Automata.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
