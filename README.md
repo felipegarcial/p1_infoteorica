@@ -1,6 +1,6 @@
 # Proyecto 1 - Informática Teórica
 
-###Instrucciones:
+## Instrucciones:
 
 1. Ingresar prueba.com a o descargar el proyecto y abrir el archivo index.html desde un navegador.
 2. Seleccione el tipo de maquina que va a usar.
